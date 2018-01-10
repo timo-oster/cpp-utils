@@ -62,7 +62,7 @@ namespace std
     {
         return boost::get<N>(t);
     }
-}
+} // namespace std
 
 namespace cpp_utils
 {
@@ -250,6 +250,6 @@ struct make_string
         return ss.str().c_str();
     }
 };
-} // namespace pev
+} // namespace cpp_utils
 
 #endif // CPP_UTILS_HH

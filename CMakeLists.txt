@@ -51,7 +51,7 @@ target_compile_features(cpp_utils INTERFACE
 # consumers' build paths.
 target_include_directories(cpp_utils INTERFACE
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-    $<INSTALL_INTERFACE:include/cpp_utils>
+    $<INSTALL_INTERFACE:include>
     ${Boost_INCLUDE_DIR})
 
 # 'make install' to the correct locations (provided by GNUInstallDirs).
