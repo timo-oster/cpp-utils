@@ -97,7 +97,7 @@ number.
 
 Returns +1 if the number if positive, -1 if it is negative, 0 if it is zero.
 
-## Interoperability between boost::tuple and std::tuple
+## Interoperability between `boost::tuple` and `std::tuple`
 
 Allows using `boost::tuple` like `std::tuple` in many situations. In particular,
 it allows to use `std::get` with `boost::tuple`, and it allows to use
