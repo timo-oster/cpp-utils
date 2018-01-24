@@ -103,3 +103,21 @@ Allows using `boost::tuple` like `std::tuple` in many situations. In particular,
 it allows to use `std::get` with `boost::tuple`, and it allows to use
 `boost::tuple` with structured bindings. This is useful for boost algorithms
 that still return `boost::tuple`, such as `boost::range::combine`.
+
+# Installation
+```sh
+git clone git@visual2.cs.ovgu.de:utils/cpp_utils.git
+mkdir cpp_utils/build
+cd cpp_utils/build
+cmake ..
+make install
+```
+
+# Using cpp_utils in Your CMake Project
+cpp_utils is usable as an imported target, which means you just need to do the
+following to use it:
+
+```cmake
+find_package(cpp_utils REQUIRED)
+target_link_libraries(my_target cpp_utils)
+```
