@@ -28,7 +28,7 @@ namespace std
     struct tuple_element<N, boost::tuples::cons<T, Tail>>
     {
         using type = typename boost::tuples::
-                element<N, boost::tuples::cons<T, Tail>>::type;
+                element<int(N), boost::tuples::cons<T, Tail>>::type;
     };
 
     template <std::size_t N, typename T, typename Tail>
