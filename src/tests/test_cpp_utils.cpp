@@ -98,13 +98,6 @@ TEST_CASE("Test remove_if")
         {
             remove_if(uset, [](int32_t i){ return i%2==1; });
 
-            static_assert(std::is_same<decltype(range(uint64_t{255}, int64_t{-1}))::value_type, uint64_t>::value, "wrong");
-
-            for(auto i: range(uset.size(), -1, -1))
-            {
-                std::cout << i << "\n";
-            }
-
             THEN("Only the even numbers must remain in the set")
             {
                 for(auto i: range(10))

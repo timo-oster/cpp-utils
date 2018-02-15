@@ -119,5 +119,5 @@ following to use it:
 
 ```cmake
 find_package(cpp_utils REQUIRED)
-target_link_libraries(my_target cpp_utils)
+target_link_libraries(my_target cpp_utils::cpp_utils)
 ```

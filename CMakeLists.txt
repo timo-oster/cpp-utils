@@ -64,7 +64,10 @@ install(DIRECTORY include/ DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
 # This makes the project importable from the install directory
 # Put config file in per-project dir (name MUST match), can also
 # just go into 'cmake'.
-install(EXPORT cpp_utilsConfig DESTINATION share/cpp_utils/cmake)
+install(EXPORT cpp_utilsConfig
+        NAMESPACE cpp_utils::
+        DESTINATION share/cpp_utils/cmake)
+add_library(cpp_utils::cpp_utils ALIAS cpp_utils)
 
 # This makes the project importable from the build directory
 export(TARGETS cpp_utils FILE Cpp_UtilsConfig.cmake)
