@@ -106,7 +106,7 @@ that still return `boost::tuple`, such as `boost::range::combine`.
 
 # Installation
 ```sh
-git clone git@visual2.cs.ovgu.de:utils/cpp_utils.git
+git clone git@github.com:timo-oster/cpp-utils.git
 mkdir cpp_utils/build
 cd cpp_utils/build
 cmake ..
